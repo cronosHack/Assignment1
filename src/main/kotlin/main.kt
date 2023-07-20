@@ -1,3 +1,5 @@
+import kotlin.math.sqrt
+
 fun main(){
 //    ----------------------- Age Calculator -------------------
     println("    PROGRAM TO CALCULATE AGE")
@@ -19,11 +21,12 @@ fun main(){
     println("    PROGRAM TO SOLVE PYTHAGORAS'S EQUATION")
 
     fun eqnCalc(){
-        val opp = 4
-        val adj = 3
-        val hyp = (opp * opp) + (adj * adj)
+        val opp = 4.0
+        val adj = 3.0
+        val hyp: Double = (opp * opp) + (adj * adj)
+        val sol = sqrt(hyp)
 
-        println("The hypotenuse of the triangle with opposite as $opp cm and adjacent as $adj cm is $hyp cm")
+        println("The hypotenuse of the triangle with opposite as $opp cm and adjacent as $adj cm is $sol cm")
     }
 
     eqnCalc()
